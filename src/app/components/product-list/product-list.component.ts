@@ -118,7 +118,8 @@ export class ProductListComponent implements OnInit {
   }
 
   updatePageSize(pageSize: any) {
-    this.thePageSize = pageSize;
+    console.log("Page Size: " + pageSize.target.value);
+    this.thePageSize = pageSize.target.value;
     this.thePageNumber = 1;
     this.listProducts();
   }
